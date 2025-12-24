@@ -1,6 +1,6 @@
 # 💡 Homography & Perspective Transform in `OpenCV` (Python Tutorial)
 ---
-[![dev branch](https://img.shields.io/badge/branch-dev-red?style=flat&logo=git&logoColor=white)](https://github.com/RH-NAYM/OpenCV-Homography-Perspective-Transform/tree/dev)
+[![main branch](https://img.shields.io/badge/branch-main-red?style=flat&logo=git&logoColor=white)](https://github.com/RH-NAYM/OpenCV-Homography-Perspective-Transform/tree/main)
 #
 
 <p align="center">
