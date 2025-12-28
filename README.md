@@ -22,35 +22,25 @@
 </p>
 
 # 📌 Overview
-This repository provides a complete guide to Homography and Perspective Transform using OpenCV in Python.
-Homography is a 3x3 projective transformation matrix that maps points from one plane to another, enabling:
+This repository provides a complete guide to `Homography` and `Perspective Transform` using `OpenCV` in Python.
+Homography is a `3x3` projective transformation matrix that maps points from one plane to another, enabling:
+- Perspective correction
+- Image stitching
+- Augmented reality overlays
+- Object tracking under perspective changes
 
-Perspective correction
+The notebook covers basic to advanced techniques, including `RANSAC`-based robust homography computation.
 
-Image stitching
-
-Augmented reality overlays
-
-Object tracking under perspective changes
-
-The notebook covers basic to advanced techniques, including RANSAC-based robust homography computation.
 ---
 
-Key Features:
+**Key Features:**
+- **Homography Intuition:** Learn how `2D` points are mapped between planes.
+- **Perspective Transformation:** Apply `cv2.warpPerspective` for realistic transformations.
+- **Point Correspondence Visualization:** Visualize how source points map to destination points.
+- **Robust Methods:** Handle noisy correspondences with `RANSAC`.
+- **Real-world Use Cases:** From document scanning to AR applications.
 
-Homography Intuition: Learn how 2D points are mapped between planes.
-
-Perspective Transformation: Apply cv2.warpPerspective for realistic transformations.
-
-Point Correspondence Visualization: Visualize how source points map to destination points.
-
-Robust Methods: Handle noisy correspondences with RANSAC.
-
-Real-world Use Cases: From document scanning to AR applications.
-
-This repository is perfect for anyone from mid-level OpenCV users to ultra-advanced practitioners aiming to master geometric transformations.
-
-
+`This repository is perfect for anyone from mid-level OpenCV users to advanced practitioners aiming to master geometric transformations`.
 
 # 📁 Project Structure
 .
@@ -77,8 +67,8 @@ This repository is perfect for anyone from mid-level OpenCV users to ultra-advan
 
 # 🧠 What You’ll Learn
 ---
-Mathematical Mapping:
-Homography maps 2D points (x, y) to (x', y') using:
+**Mathematical Mapping:**
+- **Homography maps `2D` points $(x, y)$ to $(x', y')$ using:**
 
 $$
 \text{Homography Mapping:} \\
@@ -102,16 +92,9 @@ y \\
 x_\text{pixel} = \frac{x'}{w'}, \quad y_\text{pixel} = \frac{y'}{w'}
 $$
 
- are pixel coordinates
-
-Practical Image Transformation:
-Correct perspective distortion or warp images based on point correspondences.
-
-Robustness to Noise:
-Learn how to use RANSAC to ignore outlier points and compute reliable transformations.
-
-Visualization Skills:
-Understand geometric effects by overlaying and plotting points before and after transformation.
+- **Practical Image Transformation:** Correct perspective distortion or warp images based on point correspondences.
+- **Robustness to Noise:** Learn how to use `RANSAC` to ignore `outlier` points and compute reliable `transformations`.
+- **Visualization Skills:** Understand geometric effects by overlaying and plotting points before and after transformation.
 
 
 
@@ -141,37 +124,30 @@ pip install -r requirements.txt
 **Option 1: Jupyter Notebook (Local)**
 - Install Jupyter if needed: `pip install notebook`.
 - Launch Jupyter: `jupyter notebook`.
-- Open `OpenCV-Affine-Transformation.ipynb` and run cells sequentially.
+- Open `OpenCV-Homography-Perspective.ipynb` and run cells sequentially.
     - Notebook will automatically download a placeholder image if testImage.jpg is missing.
 
 
 **Option 2: Google Colab**
-- Upload `OpenCV-Affine-Transformation.ipynb` to Colab.
+- Upload `OpenCV-Homography-Perspective.ipynb` to Colab.
 - Install dependencies: `!pip install -r requirements.txt`.
 - Run all cells for interactive demonstrations.
 
 
 # ✅ Summary
 ---
-Homography preserves lines but allows perspective distortion, unlike affine transformation.
-
-RANSAC ensures robust homography computation even with noisy or incorrect points.
-
-Visualizing source and destination points is critical to understanding transformations.
-
-Homography is a fundamental tool for image alignment, AR, and computer vision preprocessing.
+- Homography preserves lines but allows perspective distortion, unlike affine transformation.
+- `RANSAC` ensures robust homography computation even with noisy or incorrect points.
+- Visualizing source and destination points is critical to understanding transformations.
+- Homography is a fundamental tool for image alignment, AR, and computer vision preprocessing.
 
 # 🍴 Real-World Applications
 ---
-Document Scanning: Correct skewed or tilted documents.
-
-Image Stitching: Align multiple images to create panoramas.
-
-Augmented Reality: Map virtual objects onto planar surfaces.
-
-Object Tracking: Track planar objects under perspective changes.
-
-Video Stabilization: Align frames to reduce camera shake.
+- **Document Scanning:** Correct skewed or tilted documents.
+- **Image Stitching:** Align multiple images to create panoramas.
+- **Augmented Reality:** Map virtual objects onto planar surfaces.
+- **Object Tracking:** Track planar objects under perspective changes.
+- **Video Stabilization:** Align frames to reduce camera shake.
 
 # 📝 Contribution
 `Feel free to open an issue or submit a pull request to add more advanced contrast stretching techniques or multi-spectral image examples.`
